@@ -17,7 +17,7 @@ a {
   font-family: pacifico;
   font-size: 5rem;
   color: #3F3351;
-  line-height: 1;
+  line-height: 2;
 }
 
 .font2 {
@@ -86,7 +86,7 @@ a {
 
 .profile-img {
   width: 25%;
-  height: 50%;
+  height: 10%;
   border-radius: 50%;
   margin-top: 100px;
 }
@@ -129,6 +129,7 @@ color: #7A4069;
 }
 
 
+
 .bottom-container
 {
   width: 100%;
@@ -141,6 +142,7 @@ color: #7A4069;
 
 
 }
+
 
 
 .cp
