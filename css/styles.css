@@ -116,7 +116,7 @@ color: #7A4069;
 hr
 {
   border:none;
-  border-top: 0.4rem dotted #FDF5CA;
+  border-top: 0.4rem dotted #F68989;
   width:10%;
   margin:100px auto;
 }
@@ -150,13 +150,13 @@ color: #7A4069;
 color: white;
 font-family: serif;
 font-size: 0.75rem;
-padding:20px 0 ;
 }
 
 .footer-link
 {
   margin:50px 20px ;
   text-decoration: none;
+  color: #716F81;
 
 }
 

@@ -9,16 +9,78 @@
   <link rel="icon" href="favicon (1).ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
-<body>
+
+<style>
+  /* Carousel Styles */
+.projects-section {
+width: 60%;
+margin: 50px auto;
+text-align: center;
+}
+
+.carousel-inner {
+background-color: #FFDEB4;
+border-radius: 15px;
+padding: 20px;
+}
+
+.carousel-item {
+padding: 30px 0;
+}
+
+.project-slide h3 {
+font-size: 1.5rem;
+color: #7A4069;
+}
+
+.project-slide p {
+font-size: 1rem;
+color: #3F3351;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+background-color: #7A4069;
+border-radius: 50%;
+height: 40px;
+width: 40px;
+padding: 10px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+background-color: #F68989;
+}
+
+
+hr
+{
+  border:none;
+  border-top: 0.4rem dotted #F68989;
+  width:10%;
+  margin:100px auto;
+}
+
+p,h2 ,img{
+margin: 20px;
+}
+</style>
+
+
+<body style="text-align: center;">
   <!-- Homepage Section -->
   <div class="top-container">
     <img class="top-cloud" src="images/cloud-img.png" alt="cloud-img">
     <img class="bottom-cloud" src="images/cloud-img.png" alt="cloud-img">
     <div class="name">
       <h1 class="font1">I'm Hamza Djamila Amani</h1>
-      <p class="font2">Artificial Intelligence Student and future data scientist</p>
+      <p class="font2">AI student and future data scientist</p>
     </div>
     <img class="mountain" src="images/mountain-img.png" alt="mountain-img">
   </div>
@@ -28,14 +90,12 @@
 
     <div class="profile">
       <img class="profile-img" src="https://c4.wallpaperflare.com/wallpaper/950/884/848/anime-girls-icons-profile-hd-wallpaper-preview.jpg" alt="Madeline-img">
-      <h2 class="yourline"> Don't chase ... Attract ! </h2>
-      <p class="bio">i am a human that believes in work and persistence . I love pshchology , neuroscience and philosophy .</p>
+      <h2 class="yourline"> Data freak ! </h2>
+   
+    
+      <p class="bio">Hello! I’m HAMZA Djamila Amani, a dedicated Artificial Intelligence student in my fourth year at ENSIA. My academic journey has been fueled by a passion for understanding complex AI concepts and their potential to solve real-world problems. My analytical skills have consistently been a driving force in my group projects, where I excel at analyzing results, uncovering new data relationships, and making informed decisions. I am eager to contribute to projects that bridge the gap between theory and practice. however, apart from that i am just a human that believes in work and persistence . I enjoy pshchology , neuroscience and philosophy .</p>
     </div>
-    <div class="profile">
-      
-      <h2 class="yourline">Bridging Theory and Practice in AI</h2>
-      <p class="bio">Hello! I’m HAMZA DJAMILA AMANI, a dedicated Artificial Intelligence student in my fourth year at ENSIA. My academic journey has been fueled by a passion for understanding complex AI concepts and their potential to solve real-world problems. My analytical skills have consistently been a driving force in my group projects, where I excel at analyzing results, uncovering new data relationships, and making informed decisions. I am eager to contribute to projects that bridge the gap between theory and practice.</p>
-    </div>
+   
 
     <hr>
 
@@ -49,47 +109,72 @@
 
     <!-- Projects Section -->
     <div class="skills">
-      <h2 class="myskills">Projects</h2>
 
-      <div class="skill-row">
-        <h3 class=" purpleh">BlediTourism</h3>
-        <p>Developed a tourism management platform using PHP, HTML, CSS, and JavaScript. Implemented backend functionalities for user profile management and review systems. Collaborated with team members to integrate frontend design with backend operations.</p>
+      <!-- Projects Section with Carousel -->
+<div class="projects-section">
+  <h2 class="myskills">Projects</h2>
+  <p>(for more information about the projects visit my github or check my resume) </p>
+  <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="project-slide">
+          <h3 class="purpleh">BlediTourism</h3>
+          <p>Tourism management platform using PHP, HTML, CSS, and JavaScript.</p>
+        </div>
       </div>
-
-      <div class="skill-row">
-        <h3 class=" purpleh">Drivera</h3>
-        <p>Designed and implemented a web application to manage driving schools, including student and vehicle tracking. Created a database schema and notification system for vehicle maintenance.</p>
+      <div class="carousel-item">
+        <div class="project-slide">
+          <h3 class="purpleh">Drivera</h3>
+          <p>Web application for managing driving schools, including student and vehicle tracking.</p>
+        </div>
       </div>
-
-      <div class="skill-row">
-        <h3 class=" purpleh">Nim Game</h3>
-        <p>Built an AI-driven Python game using the Minimax algorithm and Tkinter for GUI. Focused on algorithm implementation and interface design. Enhanced user engagement through intuitive gameplay mechanics.</p>
+      <div class="carousel-item">
+        <div class="project-slide">
+          <h3 class="purpleh">Nim Game</h3>
+          <p>AI-driven Python game using the Minimax algorithm and Tkinter for GUI.</p>
+        </div>
       </div>
-
-      <div class="skill-row">
-        <h3 class=" purpleh">Unimate</h3>
-        <p>Contributed to the development of an educational social media platform for Algerian students. Focused on backend integration of forums, resource sharing, and user interactions. Utilized Flutter, Dart, and Flask to create a responsive and user-friendly platform.</p>
+      <div class="carousel-item">
+        <div class="project-slide">
+          <h3 class="purpleh">Unimate</h3>
+          <p>Educational social media platform for Algerian students using Flutter, Dart, and Flask.</p>
+        </div>
       </div>
-
-      <div class="skill-row">
-        <h3 class=" purpleh">Predicting Aqua Solubility</h3>
-        <p>Conducted data mining and analysis to predict solubility in water using Python. Engaged in data cleaning, preprocessing, and feature engineering. Developed predictive models that improved accuracy and reliability.</p>
+      <div class="carousel-item">
+        <div class="project-slide">
+          <h3 class="purpleh">Predicting Aqua Solubility</h3>
+          <p>Data mining and analysis to predict solubility in water using Python.</p>
+        </div>
       </div>
-
-      <div class="skill-row">
-        <h3 class=" purpleh">Time Series Classification of ECG Signals</h3>
-        <p>Applied two methods for time series classification, transforming ECG signals into image classification problems and feature engineering field-related predictors. Led feature engineering efforts to enhance model performance. Used Python scientific libraries for data analysis and model development.</p>
+      <div class="carousel-item">
+        <div class="project-slide">
+          <h3 class="purpleh">Time Series Classification of ECG Signals</h3>
+          <p>Time series classification using Python for ECG signals.</p>
+        </div>
       </div>
-
-      <div class="skill-row">
-        <h3 class=" purpleh">Loan Scoring (Loan Eligibility)</h3>
-        <p>Developed a machine learning-based web app to predict loan eligibility using real bank data. Focused on model development, data preprocessing, and web integration. Collaborated with team members to deliver a functional and user-friendly application.</p>
+      <div class="carousel-item">
+        <div class="project-slide">
+          <h3 class="purpleh">Loan Scoring</h3>
+          <p>Machine learning-based web app for predicting loan eligibility.</p>
+        </div>
       </div>
-
-      <div class="skill-row">
-        <h3 class=" purpleh">Motor Failure Time Prediction</h3>
-        <p>Implemented ML algorithms to predict motor failure times in a synthetic lab setup. Optimized models to achieve high accuracy in predictive maintenance. Demonstrated the practical application of ML in industrial settings.</p>
+      <div class="carousel-item">
+        <div class="project-slide">
+          <h3 class="purpleh">Motor Failure Time Prediction</h3>
+          <p>ML algorithms for predicting motor failure times.</p>
+        </div>
       </div>
+    </div>
+    <a class="carousel-control-prev" href="#projectsCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#projectsCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
     </div>
 
     <hr>
@@ -111,10 +196,10 @@
       <div class="skill-row">
         <h3 class=" purpleh">Analytical and Theoretical Skills</h3>
         <ul>
-          <li>Strong understanding of AI principles, including supervised and unsupervised learning, neural networks, and optimization techniques</li>
-          <li>Expertise in data mining, data preprocessing, and feature engineering</li>
+          <li>good understanding of AI principles, including supervised and unsupervised learning, neural networks, and optimization techniques</li>
+          <li>data mining and analysis skills </li>
           <li>Analytical problem-solving skills with a focus on theoretical proof and algorithmic design</li>
-          <li>Known for discovering new relationships in data and making decisions that significantly enhance project outcomes</li>
+         
         </ul>
       </div>
     </div>
@@ -129,11 +214,11 @@
     </div>
   </div>
 
-  <div class="bottom-container">
+  <div class="bottom-container" style="margin: none;">
     <a class="footer-link" href="mailto:djamila.hamza@ensia.edu.dz/">Email</a>
     <a class="footer-link" href="https://github.com/marselinemars/">Github</a>
-    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-    <p class="cp">© 2024 Hamza Djamila Amani</p>
+    <a class="footer-link" href="files/cv.pdf" class="btn" download="Hamza_Djamila_Amani_CV.pdf">Resume</a>
+    <p class="cp" style="margin: none ;">© 2024 Hamza Djamila Amani</p>
   </div>
 
 </body>
